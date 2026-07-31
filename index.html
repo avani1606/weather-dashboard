@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- ====SIDEBAR ==== -->
+         <aside class="sidebar">
+            <h2 class="sidebar-logo">Dashboard</h2>
+            <div class="user-profile">
+                <img src="" alt="user avatar" class="user-avatar">
+                <p class="user-greeting">Hello,</p>
+                <h3 class="user-name">Your Name</h3>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                 <li class="nav-item active">Dashboard</li>
+                 <li class="nav-item">Schedule</li> 
+                 <li class="nav-item">Location</li>
+                 <li class="nav-item">Calendar</li> 
+                 <li class="nav-item">Settings</li>          
+                </ul>
+            </nav>
+            <button class=""Logout-btn>Logout</button>
+         </aside>
+
+         <!-- ==== MAIN CONTENT ==== -->
+          <main class="main-content">
+
+            <!-- Search Bar -->
+             <div class="search-bar">
+                <input type="text" id="cityInput" placeholder="Search City...">
+                <button id="searchbtn">Search</button>
+             </div>
+
+             <div id="loading" class="loading hidden">Loading...</div>
+             <div id="errorMsg" class="error hidden">City not found. Please try again</div>
+
+             <!-- Hero current weather card -->
+              <section class="weather-hero">
+                <div class="weather-hero-header">
+                    <span class="weather-label">Weather</span>
+                    <span id="currentDate" class="weather-date"></span>
+                </div>
+                <p class="weather-question">What's the Weather?</p>
+                <h1 id="temperature" class="weather-temp">--°C</h1>
+                <img id="weatherIcon" class="weather-icon" src="" alt="weather icon">
+                <p id="cityName" class="Weather-city"></p>
+              </section>
+
+              <!-- Stat cards row -->
+               <section class="stats-row">
+                <div class="stat card">
+                    <p class="stat-label">Precipitation</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-label">Humidity</p>
+                    <p id="humidity" class="stat-value">--%</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-label">Wind</p>
+                    <p id="windSpeed" class="stat-value">-- mph</p>
+                </div>
+               </section>
+
+               <!-- Detail cards row -->
+                <section class="details-row">
+                    <div class="detail-card">
+                    <p class="detail-label">Feels Like</p>
+                    <p id="feelslike" class="detail-value">--°C</p>
+                </div>
+                <div class="detail-card">
+                    <p class="detail-label">Condition</p>
+                    <p id="condition" class="detail-value">--</p>
+                </div>
+                <div class="detail-card">
+                    <p class="detail-label">Visibility</p>
+                    <p id="visibility" class="detail-value">-- km</p>
+                </div>
+                </section>
+          </main>
+    </div>
+    <script src="srcipt.js"></script>
+</body>
+</html>
