@@ -72,7 +72,7 @@ box-shadow: 2px 0 12px rgba(0,0,0,0.05);
 
 /* ====SEARCH BAR ====*/
 .search-bar{
-    dsiplay: flex;
+    display: flex;
     gap: 10px;
 }
 
@@ -185,7 +185,7 @@ box-shadow: 2px 0 12px rgba(0,0,0,0.05);
 /* ==== DETAIL CARD ROW ====*/
 .detail-row{
     display:flex;
-    blockgap:16px;
+    gap:16px;
 }
 
 .detail-card{
