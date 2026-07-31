@@ -118,7 +118,7 @@ box-shadow: 2px 0 12px rgba(0,0,0,0.05);
     color: #c0392b;
 }
 
-/* ====HERO WEATHER CARC ====*/
+/* ====HERO WEATHER CARD ====*/
 .weather-hero{
     background: linear-gradient(135deg, #8e7cf0, #cfa5e6);
     border-radius: 20px;
@@ -145,8 +145,8 @@ box-shadow: 2px 0 12px rgba(0,0,0,0.05);
 }
 
 .weather-icon{
-    width:60px;
-    height: 60px;
+    width:100px;
+    height: 100px;
     position: absolute;
     top:24px;
     right: 24px;

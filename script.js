@@ -26,6 +26,7 @@ searchBtn.addEventListener("click", async function () {
     document.getElementById("condition").textContent = data.weather[0].description;
     document.getElementById("humidity").textContent = data.main.humidity + "%";
     document.getElementById("windSpeed").textContent = data.wind.speed + "mph";
+    document.getElementById("weatherIcon").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 
   } catch (error) {
     errorMsg.classList.remove("hidden");
