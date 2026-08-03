@@ -27,6 +27,13 @@ searchBtn.addEventListener("click", async function () {
     document.getElementById("humidity").textContent = data.main.humidity + "%";
     document.getElementById("windSpeed").textContent = data.wind.speed + "mph";
     document.getElementById("weatherIcon").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    document.getElementById("tempMax").textContent = data.main.temp_max;
+    document.getElementById("tempMin").textContent = data.main.temp_min;
+    const sunriseTime = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
+    const sunsetTime = new Date(data.sys.sunset * 1000).toLocaleTimeString();
+
+     document.getElementById("sunrise").textContent = sunriseTime;
+     document.getElementById("sunset").textContent = sunsetTime;
 
   } catch (error) {
     errorMsg.classList.remove("hidden");
@@ -34,3 +41,9 @@ searchBtn.addEventListener("click", async function () {
 
   loading.classList.add("hidden");
 });
+const cloudBtn = document.getElementById("cloudBtn");
+  const cloudPopup = document.getElementById("cloudPopup");
+
+  cloudBtn.addEventListener("click", function (){
+    cloudPopup.classList.toggle("hidden");
+  });

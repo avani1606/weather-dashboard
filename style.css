@@ -157,7 +157,7 @@ box-shadow: 2px 0 12px rgba(0,0,0,0.05);
     font-weight: 500;
 }
 
-/* ====STAT CARDS ROW ====*/
+/* ==== STAT CARDS ROW ====*/
 .stats-row{
     display: flex;
     gap:16px;
@@ -208,7 +208,7 @@ box-shadow: 2px 0 12px rgba(0,0,0,0.05);
     color: #333;
 }
 
-/* ====RESPONSIVE ====*/
+/* ==== RESPONSIVE ====*/
 @media (max-width: 900px){
     .dashboard-conatiner{
         flex-direction: column;
@@ -234,7 +234,7 @@ box-shadow: 2px 0 12px rgba(0,0,0,0.05);
     }
 }
 
-/* ====MOBILE: STACK CARD VERTICALLY */
+/* ==== MOBILE: STACK CARD VERTICALLY */
 @media (max-width: 600px){
     .stats-row,
     .details-row{
@@ -254,3 +254,32 @@ box-shadow: 2px 0 12px rgba(0,0,0,0.05);
         right:20px;
     }
 }
+
+/* ==== CLOUD POPUP ==== */
+.cloud-btn{
+    margin-top: 16px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.25);
+    color: white;
+    cursor: pointer;
+}
+.cloud-btn:hover{
+    background: rgba(255,255,255,0.4);
+}
+/* Cloud-shaded popup */
+.cloud-popup{
+    position: realative;
+    margin-top: 16px;
+    background:white;
+    color:#333;
+    border-radius: 50px;
+    padding:28px 32px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    font-size:13px;
+    line-height: 1.8;
+    z-index: 10;
+    min-width:220px;
+}
+
